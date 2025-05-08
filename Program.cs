@@ -24,9 +24,18 @@ namespace OCTest
 
             string connString = "uid=" + uid + ";pwd=" + pwd + ";server=" + server + ";database=" + db + ";Security=" + security;
 
+            Console.WriteLine("Connection string is "+connString);
+            
             DB2Connection con = new DB2Connection(connString);
 
-            con.Open();
+            try
+            {
+                con.Open();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("The connection error is "+ex.Message);
+            }
 
             Console.WriteLine("Connection Opened successfully");
 
