@@ -20,6 +20,9 @@ namespace OCTest
 
             string security = Environment.GetEnvironmentVariable("security");
 
+            string libpath = Environment.GetEnvironmentVariable("LD_LIBRARY_PATH");
+            Console.WriteLine("The LIBPATH is "+libpath);
+            
             //Connection String
 
             string connString = "uid=" + uid + ";pwd=" + pwd + ";server=" + server + ";database=" + db + ";Security=" + security;
