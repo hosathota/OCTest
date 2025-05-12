@@ -8,7 +8,7 @@ namespace OCTest
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Console.WriteLine("Using DB2 .NET6 provider");
+            Console.WriteLine("Using DB2 .NET8 provider");
 
             string uid = Environment.GetEnvironmentVariable("uid");
 
