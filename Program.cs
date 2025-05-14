@@ -29,11 +29,11 @@ namespace OCTest
 
             Console.WriteLine("Connection string is "+connString);
             
-            //DB2Connection con = new DB2Connection(connString);
+            DB2Connection con = new DB2Connection(connString);
 
             try
             {
-                //con.Open();
+                con.Open();
             }
             catch(Exception ex)
             {
@@ -42,7 +42,7 @@ namespace OCTest
 
             Console.WriteLine("Connection Opened successfully");
 
-            //con.Close();
+            con.Close();
 
             Console.WriteLine("Connection Closed");
 
