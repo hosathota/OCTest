@@ -6,7 +6,7 @@ USER $APP_UID
 WORKDIR /app
 
 ENV LD_LIBRARY_PATH="/app/clidriver/lib/"
-#RUN apt-get -y update && apt-get install -y libxml2
+RUN apt-get -y update && apt-get install -y libxml2
 
 
 # This stage is used to build the service project
