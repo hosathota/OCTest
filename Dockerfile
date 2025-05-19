@@ -66,5 +66,5 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 
 ENV PATH=$PATH:/app/clidriver/lib:/app/clidriver/adm
-ENV LD_DEBUG=true
+#ENV LD_DEBUG=true
 CMD tail -f /dev/null
